@@ -1,0 +1,52 @@
+/* 封面推荐 */
+.recommend {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.recommend .w {
+    background-color: #ffffff;
+    height: 50px;
+    width: 1001px;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid #e7e7e7;
+    border-top: none;
+    margin-top: -2px;
+    margin: 0 auto;
+    box-shadow: 0 3px 3px #e8e8e8;
+}
+
+.recommend a img {
+    width: 100%;
+    height: 415px;
+    display: inline-block;
+    border-radius: 15px 15px 0 0;
+}
+
+/* 切换按钮 */
+.recommend .w a div::after {
+    font-family: 'icomoon';
+    font-size: 36px;
+    line-height: 50px;
+    color: #666666;
+    transition: all ease-in .05s;
+}
+
+.recommend .w a .fl::after {
+    content: '';
+    margin-left: 50px;
+}
+
+.recommend .w a .fr::after {
+    content: '';
+    margin-right: 50px;
+}
+
+.recommend .w a div:hover::after {
+    font-size: 44px;
+    transition: all ease-in .05s;
+    margin: 0 46px;
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

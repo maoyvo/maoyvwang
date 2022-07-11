@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫羽网-信息查询</title>
+    <!-- 引入favicon图标 -->
+    <link rel="icon" type="/image/ico" href="../images/favicon.ico">
+    <!-- 引入初始化css -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 引入inquires.css -->
+    <link rel="stylesheet" href="../css/inquires.css">
+    <!-- 网站说明 -->
+    <meta name="description" content="猫羽网-实用工具、精彩视频、软件下载、游戏攻略、精美图片、免商字体,尽在猫羽网~" />
+    <!-- 关键字 -->
+    <meta name="keywords" content="实用工具,视频,软件下载,游戏攻略,图片,字体" />
+</head>
+
+<body>
+    <!-- 快捷导航 start -->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>
+                        <div id="time"></div>
+                    </li>
+                    <li>
+                        &nbsp;&nbsp;<div id="greets"></div>
+                        来自<a href="../index.html">猫羽网</a>的祝福.
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="inquires.html" target="_blank">信息查询</a></li>
+                    <li class="supplement"></li>
+                    <li><a href="">提取工具</a></li>
+                    <li class="supplement"></li>
+                    <li><a href="">免商字体</a></li>
+                    <li class="supplement"></li>
+                    <li class="arrow-icon items">
+                        <a href="">关注猫羽网</a>
+                        <ul class="muli-next">
+                            <li><a href="">微信公众号</a></li>
+                            <li><a href="">新浪微博</a></li>
+                        </ul>
+                    </li>
+                    <li class="supplement"></li>
+                    <li class="arrow-icon items"><a href="">网站导航</a>
+                        <ul class="muli-next">
+                            <li><a href="../index.html">首页</a></li>
+                            <li><a href="">实用工具</a></li>
+                            <li><a href="">精彩视频</a></li>
+                            <li><a href="">软件下载</a></li>
+                            <li><a href="">游戏攻略</a></li>
+                            <li><a href="">精美图片</a></li>
+                            <li><a href="">免商字体</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </section>
+    <!-- 快捷导航 end -->
+    <!-- 导航栏 start -->
+    <header class="header">
+        <div class="w">
+            <div class="logo fl">
+                <h1>
+                    <a href="../index.html" title="猫羽网">
+                        <img src="../images/LOGO.png" alt="猫羽网">
+                    </a>
+                </h1>
+            </div>
+
+            <nav class="nav fr">
+                <ul>
+                    <li>
+                        <a href="../index.html">首页</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="#">次元</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="#">游戏</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="#">精选</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="#">更多</a>
+                        <span></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- 导航栏 end -->
+    <!-- 封推 start -->
+    <div class="recommend w ">
+        <a href="cn/featured_videos.html" title="猫羽网推荐" id="enter" target="_blank"><img src="https://api.d5.nz/api/ip/"
+                alt="图片加载错误" id="banner"></a>
+        <div class="w">
+            <a href="#" id="prev">
+                <div class="fl"></div>
+            </a>
+            <a href="#" id="next">
+                <div class="fr"></div>
+            </a>
+        </div>
+    </div>
+    <!-- 封推 end -->
+</body>
+
+</html>
+<!-- 引入script.js文件 -->
+<script>
+    // 时间显示
+    function time() {
+        var vWeek, vWeek_s, vDay;
+        vWeek = ["星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+        var date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        hours = date.getHours();
+        minutes = date.getMinutes();
+        seconds = date.getSeconds();
+        vWeek_s = date.getDay();
+        document.getElementById("time").innerHTML = year + "年" + month + "月" + day + "日" + hours + "时" + minutes + "分" + seconds + "秒" + "\t" + vWeek[vWeek_s];
+
+    };
+    setInterval("time()", 1000);
+    // 问候语显示
+    function greets() {
+        var greets = "";
+        var date = new Date();
+        hour = date.getHours();
+        if (hour < 0) {
+            greets = "哎呀,时间获取失败……"
+        } else if (hour < 4) {
+            greets = "凌晨好~";
+        } else if (hour < 11) {
+            greets = "早上好~";
+        } else if (hour < 13) {
+            greets = "中午好~";
+        } else if (hour < 18) {
+            greets = "下午好~";
+        } else if (hour < 20) {
+            greets = "傍晚好~";
+        } else if (hour < 22) {
+            greets = "晚上好~";
+        } else if (hour <= 24) {
+            greets = "午夜好~";
+        } else if (hour > 24) {
+            greets = "哎呀,时间获取失败……"
+        }
+        document.getElementById("greets").innerHTML = greets;
+    }
+    setInterval("greets()");
+</script>

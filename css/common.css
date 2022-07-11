@@ -1,0 +1,202 @@
+/* 声明字体图标 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心的宽度 */
+
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 设置body背景颜色 */
+body {
+    background-color: #f1f1f1;
+}
+
+/* 左右浮动 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 颜色更改 */
+
+.style_color {
+    color: rgb(10, 163, 177);
+}
+
+/* ico时间图标 */
+.time::after {
+    content: '';
+    font-family: 'icomoon';
+    font-size: 12px;
+}
+
+/* ico星星图标 */
+.star::after {
+    content: '';
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+
+/* 首行缩进 */
+.indent {
+    text-indent: 2em;
+}
+
+/* 快捷导航栏 */
+
+.shortcut {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: #f1f1f1;
+}
+
+.shortcut .w {
+    height: 30px;
+    margin: 0 auto;
+}
+
+.shortcut ul li {
+    position: relative;
+    float: left;
+}
+
+.shortcut ul li div {
+    display: inline-block;
+}
+
+/* 选择所有的偶数的小li */
+.shortcut .fr ul .supplement {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow-icon::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    float: right;
+    margin: 1px 0 0 5px;
+    transition: all ease-in .15s
+}
+
+/* 下拉菜单 */
+
+.muli-next {
+    position: absolute;
+    width: 100px;
+    left: -12px;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all ease-in .15s
+}
+
+.muli-next li {
+    width: 100px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transform: all 1s ease;
+}
+
+.arrow-icon:hover .muli-next {
+    visibility: visible;
+    opacity: 1;
+    transition: all .25s;
+    top: 30px;
+}
+
+.muli-next li:last-child {
+    border-radius: 0 0 12px 12px;
+    padding-bottom: 4px;
+}
+
+/* 当鼠标移动到下拉菜单时文本变色、旋转 */
+
+.arrow-icon:hover {
+    color: rgb(10, 163, 177);
+}
+
+.items:hover>a {
+    color: rgb(10, 163, 177);
+    transition: all ease-in .05s
+}
+
+.arrow-icon:hover::after {
+    transform: rotate(-90deg)
+}
+
+/* 导航栏 */
+.header {
+    position: relative;
+    margin: 0 auto;
+    height: 89px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 4px 3px #e8e8e8;
+}
+
+.header .w {
+    position: relative;
+    height: 87px;
+    margin: 0 auto;
+}
+
+/* LOGO */
+.logo h1 a img {
+    width: 180px;
+}
+
+
+.nav ul {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 15px 0 15px;
+}
+
+.nav ul li span {
+    margin: 0 auto;
+    margin-top: 3px;
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: rgb(10, 163, 177);
+    transition: all ease-in .15s
+}
+
+.nav ul li:hover span {
+    width: 40px;
+    height: 3px;
+    transition: all ease-in .12s
+}
+
+.nav ul li a {
+    color: rgb(0, 0, 0);
+}

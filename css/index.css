@@ -1,0 +1,200 @@
+/* 封面推荐 */
+.recommend {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.recommend .w {
+    background-color: #ffffff;
+    height: 50px;
+    width: 1001px;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid #e7e7e7;
+    border-top: none;
+    margin-top: -2px;
+    margin: 0 auto;
+    box-shadow: 0 3px 3px #e8e8e8;
+}
+
+.recommend a img {
+    width: 100%;
+    height: 415px;
+    display: inline-block;
+    border-radius: 15px 15px 0 0;
+}
+
+/* 切换按钮 */
+.recommend .w a div::after {
+    font-family: 'icomoon';
+    font-size: 36px;
+    line-height: 50px;
+    color: #666666;
+    transition: all ease-in .05s;
+}
+
+.recommend .w a .fl::after {
+    content: '';
+    margin-left: 50px;
+}
+
+.recommend .w a .fr::after {
+    content: '';
+    margin-right: 50px;
+}
+
+.recommend .w a div:hover::after {
+    font-size: 44px;
+    transition: all ease-in .05s;
+    margin: 0 46px;
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 最近更新 */
+.update {
+    position: relative;
+    height: 90px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 13px;
+    box-shadow: 0 3px 3px #e8e8e8;
+    border: 1px solid #e7e7e7;
+}
+
+.update h3 {
+    margin: 5px 0 0 10px;
+    color: #333333;
+}
+
+.update ul {
+    margin-top: -1px;
+    width: 1000px;
+    height: 60px;
+}
+
+.update ul li {
+    margin-left: 20px;
+    color: #333333;
+    height: 20px;
+}
+
+.update ul li a {
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+    transition: all ease-in .05s;
+}
+
+.update ul li a:hover {
+    color: rgb(10, 163, 177);
+    transition: all ease-in .05s
+}
+
+.update ul li p {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    cursor: default;
+}
+
+.update ul li .fl {
+    margin-left: 15px;
+}
+
+.update>div {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+}
+
+/* 推荐 */
+.cover {
+    position: relative;
+    height: 180px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    margin-bottom: -10px;
+}
+
+.cover>a img {
+    width: 240px;
+    height: 150px;
+    box-shadow: 0 3px 3px #e8e8e8;
+}
+
+.cover>div {
+    margin-left: 20px;
+}
+
+.cover>div header h2 a {
+    color: #333333;
+    transition: all ease-in .05s
+}
+
+.cover>div header h2 a:hover {
+    color: rgb(10, 163, 177);
+    transition: all ease-in .05s
+}
+
+.cover>div header h2 a span {
+    margin-left: 10px;
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cover>div .author {
+    height: 14px;
+    margin-top: 4px;
+    font-size: 13px;
+    cursor: default;
+}
+
+.cover>div .author a {
+    cursor: pointer;
+}
+
+.cover>div .author time {
+    line-height: 14px;
+    font-size: 13px;
+}
+
+.cover>div .score {
+    margin-top: 12px;
+    color: #333333;
+    cursor: default;
+}
+
+.cover>div .score .star {
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cover>div .intro {
+    margin-top: 8px;
+}
+
+.indent {
+    color: #333333;
+    cursor: default;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 650px;
+}
+
+.cover>div .reprinted {
+    position: absolute;
+    cursor: default;
+    right: 10px;
+    bottom: 6px;
+}
