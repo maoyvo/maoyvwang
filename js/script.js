@@ -46,7 +46,7 @@ window.onload = function () {
     // 获取img标签
     var img = document.getElementsByTagName("banner")[0];
     // 创建一个数组用于保存图片的路径
-    var imgArr = ["http://124.221.172.104/upload/banner_1.png", "http://124.221.172.104/upload/banner_2.png"];
+    var imgArr = ["124.221.172.104/upload/banner_1.png", "124.221.172.104/upload/banner_2.png"];
     // 创建一个变量保存当前正在显示的图片的索引
     var index = 0;//默认显示的是第一张
     // 获取a标签
