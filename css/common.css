@@ -59,6 +59,20 @@ body {
     text-indent: 2em;
 }
 
+/* 返回 */
+.return {
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 渐变 */
+.gradient {
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* 快捷导航栏 */
 
 .shortcut {
