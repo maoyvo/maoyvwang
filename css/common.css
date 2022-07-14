@@ -54,6 +54,13 @@ body {
     font-size: 14px;
 }
 
+/* ico返回顶端 */
+.top::after {
+    content: '';
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+
 /* 首行缩进 */
 .indent {
     text-indent: 2em;
@@ -71,6 +78,30 @@ body {
     background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* 返回顶部 */
+.return_top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition: all ease-in 1s
+}
+
+.return_top .top {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    border-radius: 90px;
+}
+
+.return_top .top::after {
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -23px;
+    margin-left: 4.5px;
+    font-size: 30px;
 }
 
 /* 快捷导航栏 */
@@ -189,6 +220,7 @@ body {
 }
 
 .nav ul li {
+    position: relative;
     display: inline-block;
     text-align: center;
     font-size: 20px;
@@ -196,19 +228,24 @@ body {
 }
 
 .nav ul li span {
-    margin: 0 auto;
+    position: absolute;
     margin-top: 3px;
     display: block;
     width: 0px;
     height: 3px;
     background-color: rgb(10, 163, 177);
-    transition: all ease-in .15s
+    transition: all ease-in .15s;
+    left: 50%;
+    margin-left: -0px;
 }
 
 .nav ul li:hover span {
-    width: 40px;
+    width: 44px;
     height: 3px;
-    transition: all ease-in .12s
+    transition: all ease-in .12s;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -22px;
 }
 
 .nav ul li a {

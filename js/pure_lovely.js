@@ -46,13 +46,13 @@ window.onload = function () {
     // 获取img标签
     var img = document.getElementsByTagName("banner")[0];
     // 创建一个数组用于保存图片的路径
-    var imgArr = ["upload/banner_1.png", "upload/banner_2.png"];
+    var imgArr = ["../upload/cover/660b7090d6fd2e42d2bb21e017082350cb14dc25.jpg", "../upload/cover/c4491bca6a81e53e1998d38b8c3f64e8d2b8360f.jpg"];
     // 创建一个变量保存当前正在显示的图片的索引
     var index = 0;//默认显示的是第一张
     // 获取a标签
     var a = document.getElementsByTagName("enter")[0];
     // 创建一个数组用于保存链接的路径
-    var aArr1 = ["cn/featured_videos.html", "cn/pure_lovely.html"];
+    var aArr1 = ["video/660b7090d6fd2e42d2bb21e017082350cb14dc25.html", "video/c4491bca6a81e53e1998d38b8c3f64e8d2b8360f.html"];
     // 创建一个变量保存当前正在显示的图片的超链接的索引
     var index1 = 0; // 默认第一个路径
     // 给上一张按钮绑定单击事件

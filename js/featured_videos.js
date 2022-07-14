@@ -46,13 +46,13 @@ window.onload = function () {
     // 获取img标签
     var img = document.getElementsByTagName("banner")[0];
     // 创建一个数组用于保存图片的路径
-    var imgArr = ["upload/banner_1.png", "upload/banner_2.png"];
+    var imgArr = ["../upload/cover/82191afca1bf42351eb2c845a19a5dd07ebf66a6.jpg", "../upload//cover/b5797b0b708a3753b25b2bdd551dbfaf8b559d76.jpg", "../upload/cover/7a9499dbbdbd23101d41e57be8e0c0b62008822d.jpg", "../upload/cover/8e070b998dce67c9782566c3e37874347fb2b3a1.jpg"];
     // 创建一个变量保存当前正在显示的图片的索引
     var index = 0;//默认显示的是第一张
     // 获取a标签
     var a = document.getElementsByTagName("enter")[0];
     // 创建一个数组用于保存链接的路径
-    var aArr1 = ["cn/featured_videos.html", "cn/pure_lovely.html"];
+    var aArr1 = ["video/82191afca1bf42351eb2c845a19a5dd07ebf66a6.html", "video/b5797b0b708a3753b25b2bdd551dbfaf8b559d76.html", "video/7a9499dbbdbd23101d41e57be8e0c0b62008822d.html", "video/8e070b998dce67c9782566c3e37874347fb2b3a1.html"];
     // 创建一个变量保存当前正在显示的图片的超链接的索引
     var index1 = 0; // 默认第一个路径
     // 给上一张按钮绑定单击事件

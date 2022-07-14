@@ -45,6 +45,15 @@
     width: 750px;
 }
 
+.video .intro .indent {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+
 .video .score {
     margin: 5px 0 0 55px;
     color: #333333;
