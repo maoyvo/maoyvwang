@@ -23,8 +23,8 @@
         loopy()
         function loopy() {
             var sWord = ""
-            while (sWord != "maoyvwang.wangjunli") {
-                sWord = prompt("网站搭建测试中,请输入正确的密码以访问网站。")
+            while (sWord != "************") {
+                sWord = prompt("请输入正确的密码以访问网站")
             }
         }
     </script>
@@ -34,7 +34,7 @@
 
 <body>
     <!-- 快捷导航 start -->
-    <section class="shortcut">
+    <section class="shortcut" id="top">
         <div class="w">
             <div class="fl">
                 <ul>
@@ -118,8 +118,8 @@
     <!-- 导航栏 end -->
     <!-- 封推 start -->
     <div class="recommend w ">
-        <a href="cn/featured_videos.html" title="猫羽网推荐" id="enter" target="_blank"><img src="upload/banner_1.png"
-                alt="图片加载错误" id="banner"></a>
+        <a href="cn/featured_videos.html" title="猫羽网推荐" id="enter"><img src="upload/banner_1.png" alt="图片加载错误"
+                id="banner"></a>
         <div class="w">
             <a href="#" id="prev">
                 <div class="fl"></div>
@@ -542,11 +542,27 @@
         </div>
     </article>
     <!-- 推荐视频 end -->
-    <!-- 推荐视频2 start -->
-
-    <!-- 推荐视频2 end -->
-
-
+    <!-- 查看更多 start -->
+    <div class="more w">
+        <div class="fl">
+            <p>首页已经到头啦!</p>
+        </div>
+        <div class="fr">
+            <p class="gradient">您还可以前往如下地点查看:</p>
+            <ul>
+                <li><a href="cn/featured_videos.html">青春活力</a><span></span></li>
+                <li><a href="cn/pure_lovely.html">清纯可爱</a><span></span></li>
+                <li><a href="">详细分类</a><span></span></li>
+                <li><a href="">站点精选</a><span></span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 查看更多 end -->
+    <!-- 返回顶端 start -->
+    <a href="#top" class="return_top" alt="返回顶端" title="返回顶部">
+        <div class="top"></div>
+    </a>
+    <!-- 返回顶端 end -->
 </body>
 
 </html>
