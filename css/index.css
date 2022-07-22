@@ -58,9 +58,9 @@
     background-color: #ffffff;
     margin: 0 auto;
     border-radius: 15px;
-    margin-top: 13px;
     box-shadow: 0 3px 3px #e8e8e8;
     border: 1px solid #e7e7e7;
+    margin-top: 13px;
 }
 
 .update h3 {
@@ -113,6 +113,32 @@
 }
 
 /* 推荐 */
+.video {
+    height: 40px;
+    margin-top: 12px;
+}
+
+.video h1 {
+    float: left;
+    color: #333;
+    cursor: default;
+    line-height: 40px;
+}
+
+/* ico视频图标 */
+.video span::after {
+    float: left;
+    content: '';
+    font-family: 'icomoon';
+    font-size: 24px;
+    color: #333;
+    margin: 3px 4px 0 6px;
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 视频详情栏 */
 .cover {
     position: relative;
     height: 180px;
@@ -197,4 +223,252 @@
     cursor: default;
     right: 10px;
     bottom: 6px;
+    font-weight: 400;
+}
+
+/* 查看更多 */
+.more {
+    margin-top: 15px;
+    height: 100px;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 3px 3px #e8e8e8;
+    margin-bottom: 50px;
+    padding: 5px 0;
+}
+
+.more div {
+    height: 100px;
+    padding: 5px;
+    text-align: center;
+}
+
+.more .fl {
+    width: 400px;
+    border-right: 2px #e7e7e7 dashed;
+}
+
+.more .fl p {
+    font-size: 24px;
+    color: #333;
+    line-height: 75px;
+    font-weight: 600;
+}
+
+.more .fr {
+    width: 598px;
+}
+
+.more .fr ul li {
+    float: none;
+    display: inline-block;
+}
+
+.more .fr p {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.more .fr ul li {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.more .fr ul li a {
+    color: #333;
+    transition: all ease-in .05s
+}
+
+.more .fr ul li span {
+    margin: 0 auto;
+    margin-top: 3px;
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: rgb(10, 163, 177);
+    transition: all ease-in .15s
+}
+
+.more .fr ul li:hover span {
+    width: 63px;
+    height: 3px;
+    transition: all ease-in .12s;
+    border-radius: 5px;
+}
+
+/* 图片推荐 */
+.img_recommended {
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.img_recommended h1 {
+    float: left;
+    color: #333;
+    cursor: default;
+    line-height: 40px;
+}
+
+/* ico视频图标 */
+.img_recommended span::after {
+    float: left;
+    content: '';
+    font-family: 'icomoon';
+    font-size: 24px;
+    color: #333;
+    margin: 3px 4px 0 6px;
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 图片详情 */
+.pictures {
+    column-count: 4;
+    column-gap: 15px;
+    /*栏之间空隙*/
+}
+
+.pictures div {
+    width: 241px;
+    position: relative;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 3px 3px #e8e8e8;
+    border-radius: 15px;
+    margin: 0 12px 15px 0;
+    transition: all .15s;
+    display: grid;
+    break-inside: avoid;
+}
+
+.pictures div:hover {
+    border-color: #28C76F;
+    transition: all .2s;
+}
+
+.pictures>div:nth-child(4n) {
+    margin-right: 0;
+}
+
+.pictures div a img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 3px 3px #e8e8e8;
+}
+
+
+.pictures div>span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff00;
+    border-radius: 0 0 15px 15px;
+    transition: all .15s;
+    border: 1px solid #e7e7e700;
+}
+
+.pictures div:hover>span {
+    cursor: default;
+    background-color: #ffffffab;
+    border-top: 1px solid #ffffff;
+    transition: all .2s;
+}
+
+.pictures div span h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #e8e8e8;
+    transition: all .15s;
+    width: 200px;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.pictures div:hover span h4 {
+    margin-top: 13px;
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .2s;
+}
+
+.pictures div span .fl {
+    color: #e8e8e8;
+    margin: -3px 0 0 34px;
+    font-size: 14px;
+    height: 18px;
+    transition: all .2s;
+    line-height: 18px;
+}
+
+.pictures div span .fl .time::after {
+    font-size: 12px;
+}
+
+.pictures div span .fl:nth-child(3n) {
+    margin: -6px 0 0 26px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.pictures div:hover span .fl {
+    margin-top: 0;
+    color: #333;
+    transition: all .2s;
+}
+
+.pictures div i {
+    width: 239px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(255, 255, 255, 0);
+    border-radius: 15px 15px 0 0;
+    background-color: #ffffff00;
+    transition: all .15s;
+    border-bottom: 2px solid #ffffff00;
+}
+
+.pictures div i span {
+    width: 134px;
+    display: block;
+    margin: 0 auto;
+    transition: all .15s;
+    color: #ffffff00;
+}
+
+.pictures div:hover i {
+    background-color: #ffffffab;
+    border-bottom: 1px solid #ffffff;
+    transition: all .2s;
+    color: #333;
+}
+
+.pictures div:hover i span {
+    transition: all .2s;
+    color: #333;
+}
+
+.pictures div i span .star {
+    color: #ffffff00;
+    transition: all .2s;
+}
+
+.pictures div:hover i span .star {
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .2s;
 }
