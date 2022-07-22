@@ -11,7 +11,6 @@ function time() {
     seconds = date.getSeconds();
     vWeek_s = date.getDay();
     document.getElementById("time").innerHTML = year + "年" + month + "月" + day + "日" + hours + "时" + minutes + "分" + seconds + "秒" + "\t" + vWeek[vWeek_s];
-
 };
 setInterval("time()", 1000);
 // 问候语显示
@@ -41,51 +40,6 @@ function greets() {
     document.getElementById("greets").innerHTML = greets;
 }
 setInterval("greets()");
-// 图片切换
-window.onload = function () {
-    // 获取img标签
-    var img = document.getElementsByTagName("banner")[0];
-    // 创建一个数组用于保存图片的路径
-    var imgArr = ["upload/banner_1.png", "upload/banner_2.png"];
-    // 创建一个变量保存当前正在显示的图片的索引
-    var index = 0;//默认显示的是第一张
-    // 获取a标签
-    var a = document.getElementsByTagName("enter")[0];
-    // 创建一个数组用于保存链接的路径
-    var aArr1 = ["cn/featured_videos.html", "cn/pure_lovely.html"];
-    // 创建一个变量保存当前正在显示的图片的超链接的索引
-    var index1 = 0; // 默认第一个路径
-    // 给上一张按钮绑定单击事件
-    var prev = document.getElementById("prev");
-    prev.onclick = function () {
-        index--;
-        if (index < 0) {
-            index = imgArr.length - 1;
-        }
-        banner.src = imgArr[index];
-        index1--;
-        if (index1 < 0) {
-            index1 = aArr1.length - 1;
-        }
-        enter.href = aArr1[index1];
-    }
-
-    // 给下一张按钮绑定单击事件
-    var next = document.getElementById("next");
-    next.onclick = function () {
-        index++;
-        if (index > imgArr.length - 1) {
-            index = 0;
-        }
-        banner.src = imgArr[index];
-        index1++;
-        if (index1 > aArr1.length - 1) {
-            index1 = 0;
-        }
-        enter.href = aArr1[index1];
-    }
-
-}
 // 返回上个页面
 
 function returns() {
