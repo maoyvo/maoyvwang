@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>猫羽网-心跳光谱决赛圈 ❤️ 甜 过 爱 你 ❤️</title>
+    <title>猫羽网-你的风纪委员同学来啦~</title>
     <!-- 引入favicon图标 -->
     <link rel="icon" type="/image/ico" href="../../images/favicon.ico">
     <!-- 引入初始化css -->
@@ -13,7 +13,7 @@
     <!-- 引入公共样式 -->
     <link rel="stylesheet" href="../../css/common.css">
     <!-- 引入video.css -->
-    <link rel="stylesheet" href="../../css/video.css">
+    <link rel="stylesheet" href="../../css/images.css">
     <!-- 网站说明 -->
     <meta name="description" content="猫羽网-实用工具、精彩视频、软件下载、游戏攻略、精美图片、免商字体,尽在猫羽网~" />
     <!-- 关键字 -->
@@ -108,42 +108,83 @@
         </div>
     </header>
     <!-- 导航栏 end -->
-    <!-- 播放框 start -->
-    <div class="video w">
-        <h1>心跳光谱决赛圈 ❤️ 甜 过 爱 你 ❤️<span class="gradient">&nbsp;&nbsp;</span><br><b>该视频转载自<a
-                    href="https://www.bilibili.com/" target="_blank">「哔哩哔哩」</a>点击
-                <a href="https://www.bilibili.com/video/BV13A4y1Z758?spm_id_from=333.880.
-            my_history.page.click&vd_source=5e9c509d1af5f662c03db0f28c87d355" target="_blank">
-                    「前往原视频」</a>;&nbsp;如有侵权,请联系本站删除。
-            </b></h1>
-        <iframe src="//player.bilibili.com/player.html?aid=896891902&bvid=BV13A4y1Z758&cid=731684066&page=1"
-            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="video_playback">
-        </iframe>
-        <time>
-            <i class="time"></i>&nbsp;2022-05-28
-        </time>
-        <div class="intro">
-            <p style="color: #333;">简介：</p>
-            <p class="indent">我觉得，应该没有人会不喜欢甜甜的吧？特此献上五万粉感谢~</p>
+
+    <!-- 图片查看 start -->
+    <div class="images w">
+        <i><span>推荐：<b class="star">&nbsp;</b><b class="star">&nbsp;</b><b class="star">&nbsp;</b><b
+                    class="star">&nbsp;</b><b class="star">&nbsp;</b></span></i>
+        <span>
+            <h1 id="h1" style="font-size: 60px;">91</h1>
+        </span>
+        <div class="title">
+            <h1>你的风纪委员同学来啦~<b class="gradient">&nbsp;&nbsp;推荐</b></h1>
         </div>
-        <p class="score">推荐:
-            <b class="star">&nbsp;&nbsp;</b><b class="star">&nbsp;</b><b class="star">&nbsp;</b>
-        </p>
-        <p class="copyright_statement">版权©归<a href="https://space.bilibili.com/1010614805"
-                target="_blank">「平安银行信用卡」</a>所有，本站仅提供预览观看服务；如有侵权请联系删除。
-        </p>
-        <div class="information">
-            <a href="https://space.bilibili.com/1010614805" target="_blank">
-                <img src="../../upload/portrait/693e414721b0af1c496fe6aaed644fb3905b51bd.jpg" alt="头像加载错误"
-                    class="portrait">
-                <p>平安银行信用卡</p>
-            </a>
+        <div class="content w">
+            <div class="img clearfix">
+                <a><span class="fl" id="prev"></span></a>
+                <a><span class="fr" id="next"></span></a><img
+                    src="../../upload/pictures/0001/4d7c123a9f81c321414d9a3e47c4994a5fbe13ab3.png" alt="图片加载失败"
+                    id="banner">
+            </div>
+        </div>
+        <div class="directory w">
+            <div class="fl"><span><a>「你的风纪委员同学来啦~」</a>共&nbsp;<b id="n1">&nbsp;数量加载失败&nbsp;</b>&nbsp;张，当前为第&nbsp;<b
+                        id="n2">1</b>&nbsp;张。</span></div>
+            <div class="fr"><a href="../../upload/pictures/0001/0001.zip">「点击下载」</a></div>
         </div>
     </div>
-    <!-- 播放框 end -->
+    <script>
+        // 图片切换
+        window.onload = function () {
+            // 获取img标签
+            var img = document.getElementsByTagName("banner")[0];
+            // 创建一个数组用于保存图片的路径
+            var imgArr = ["../../upload/pictures/0001/4d7c123a9f81c321414d9a3e47c4994a5fbe13ab3.png", "../../upload/pictures/0001/4d7cf12d81c321414d9a3e47c4994a5fbe13ab3.png", "../../upload/pictures/0001/4d7cfba9f81c321414d9a3e47c4994a5f1273ab3.png", "../../upload/pictures/0001/4d7cfba9f81c321414d9a3e47c4994a213a13ab3.png", "../../upload/pictures/0001/4d7cfba9f81c321414d9a9n47c4994a5fbe13ab3.png", "../../upload/pictures/0001/4d7cfba9f81c32141123a3e47c4994a5fbe13ab3.png", "../../upload/pictures/0001/4d7cfba9f81c3214141123141e47c4994a5fbe13ab3.png", "../../upload/pictures/0001/4dch1fba9f81c321414d9a3e47c4994a5fbe13abah.png", "../../upload/pictures/0001/1234d7cfba9f81c321d9a3e47c4994a5fbe13ab3.png"];
+            // 创建一个变量保存当前正在显示的图片的索引
+            var index = 0;//默认显示的是第一张
+            // 获取显示元素
+            var n1 = document.getElementById("n1");
+            var n2 = document.getElementById("n2");
+            var h1 = document.getElementById("h1");
+            // 右上角数量显示
+            function quantity() {
+                if (imgArr.length < 10) {
+                    h1.innerText = imgArr.length;
+                } else {
+                    document.getElementById("h1").style = 'font-size:50px';
+                    h1.innerText = imgArr.length;
+                }
+            }
+            quantity()
+            // 给上一张按钮绑定单击事件
+            var prev = document.getElementById("prev");
+            prev.onclick = function () {
+                index--;
+                if (index < 0) {
+                    index = imgArr.length - 1;
+                }
+                banner.src = imgArr[index];
+                n1.innerText = imgArr.length;
+                n2.innerText = index + 1;
+            }
 
+            // 给下一张按钮绑定单击事件
+            var next = document.getElementById("next");
+            next.onclick = function () {
+                index++;
+                if (index > imgArr.length - 1) {
+                    index = 0;
+                }
+                banner.src = imgArr[index];
+                n1.innerText = imgArr.length;
+                n2.innerText = index + 1;
+            }
+            n1.innerText = imgArr.length;
+        }
+    </script>
+    <!-- 图片查看 end -->
 </body>
 
 </html>
 <!-- 引入script.js文件 -->
-<script src="../../js/script.js"></script>
+<script src="../../js/images.js"></script>
