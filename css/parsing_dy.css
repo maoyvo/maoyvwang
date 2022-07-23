@@ -1,0 +1,120 @@
+.content {
+    height: 800px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-bottom: 200px;
+    border-radius: 15px;
+    box-shadow: 0 3px 3px #e8e8e8;
+    border: 1px solid #e7e7e7;
+}
+
+.col-md-8 {
+    height: 400px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.col-md-8 .contact_form h1 {
+    margin-top: 5px;
+    font-size: 26px;
+}
+
+.col-md-8 .contact_form h1 a {
+    transition: all ease-in .15s;
+}
+
+.col-md-8 .contact_form h1 a:hover {
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all ease-in .2s;
+}
+
+.row .douyin_form .col-md-12 .form-group {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.row .douyin_form .col-md-12 .form-group .form-control {
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    height: 40px;
+    border: 1px solid #28C76F;
+    border-radius: 30px;
+    box-shadow: 0 3px 3px #e8e8e8;
+}
+
+.col-md-12 {
+    height: 60px;
+    margin-top: 100px;
+}
+
+.col-md-12 .sim-btn {
+    margin-top: -50px;
+    margin: 0 auto;
+    display: block;
+    width: 90px;
+    border: 1px solid #28C76F;
+    border-radius: 60px;
+    box-shadow: 0 3px 3px #e8e8e8;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    line-height: 28px;
+    height: 30px;
+    cursor: pointer;
+    transition: all ease-in .15s;
+}
+
+.text-center {
+    margin-top: 40px;
+}
+
+.col-md-12 .sim-btn:hover {
+    background-color: #28C76F;
+    color: #fff;
+    transition: all ease-in .15s;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.readme {
+    border: 2px solid #e7e7e7;
+    border-radius: 30px;
+    box-shadow: 0 3px 3px #e8e8e8;
+    margin: 0 auto;
+    width: 600px;
+    height: 300px;
+    color: #333;
+}
+
+.readme h2 {
+    margin-top: 6px;
+    text-align: center;
+}
+
+.readme .p1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2px;
+    width: 550px;
+    margin-bottom: -18px;
+}
+
+.readme .p2 {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+    text-indent: 2em;
+}
+
+.image-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.image-li img {
+    width: 100%;
+    padding: 10px;
+}

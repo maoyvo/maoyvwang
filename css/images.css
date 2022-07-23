@@ -1,0 +1,158 @@
+body {
+    color: #333;
+}
+
+a {
+    color: #333;
+}
+
+.images {
+    position: relative;
+    margin-top: 15px;
+    height: 800px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    box-shadow: 0 3px 3px #e8e8e8;
+    margin-bottom: 100px;
+}
+
+.images i {
+    cursor: default;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.images i b {
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.images>span {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    border-radius: 20px;
+    border: 2px solid #e7e7e7;
+    box-shadow: 0 4px 3px #e8e8e8;
+    width: 80px;
+    height: 80px;
+}
+
+.images>span #h1 {
+    line-height: 80px;
+    text-align: center;
+    cursor: default;
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 66px;
+}
+
+.images .title h1 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 26px;
+    color: #333;
+    cursor: default;
+    height: 50px;
+}
+
+.images .content {
+    height: 720px;
+    margin: 0 auto;
+    margin: 5px 0 -6px 0;
+}
+
+.images .content .img {
+    position: relative;
+    height: 720px;
+    width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.images .content .img span {
+    position: absolute;
+}
+
+.images .content .img img {
+    display: block;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: -10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    box-shadow: 0 3px 3px #e8e8e8;
+}
+
+.images .content .img .fl {
+    top: 50%;
+    margin-top: -20px;
+    left: 50px;
+}
+
+.images .content .img .fr {
+    top: 50%;
+    margin-top: -20px;
+    right: 50px;
+}
+
+.images .content .img a:hover span {
+    cursor: pointer;
+}
+
+.images .content .img a:hover span::after {
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.images .content .img .fl::after {
+    content: '';
+    font-family: 'icomoon';
+    font-size: 40px;
+    color: #666;
+}
+
+.images .content .img .fr::after {
+    content: '';
+    font-family: 'icomoon';
+    font-size: 40px;
+    color: #666;
+}
+
+.directory {
+    height: 20px;
+    line-height: 20px;
+    cursor: default;
+    margin-bottom: 10px;
+}
+
+.directory .fl {
+    margin-left: 10px;
+}
+
+.directory a:hover {
+    background: linear-gradient(90deg, #28C76F 0%, rgb(10, 163, 177) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.directory b {
+    font-weight: 400;
+}
+
+.directory .fr {
+    margin-right: 10px;
+}
+
+.title h1 {
+    margin: 0 auto;
+    width: 700px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
